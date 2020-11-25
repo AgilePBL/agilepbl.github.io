@@ -606,7 +606,7 @@ h6 {
 header {
 	position: relative;
 	background-color: black;
-	height: 95vh;
+	height: 75vh;
 	min-height: 25rem;
 	width: 100%;
 	overflow: hidden;
@@ -624,8 +624,26 @@ header video {
 	transform: translateX(-50%) translateY(-50%);
 }
 
+header background {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 0;
+	/* width: 120%; */
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
 @media (max-width: 1200px) {
 	header video {
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+	}
+	header background {
 		min-width: 100%;
 		min-height: 100%;
 		width: auto;
