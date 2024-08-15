@@ -4003,10 +4003,18 @@ readers do not read off random characters that represent icons */
   content: "\f1e8"; }
 
 .fa-twitter:before {
-  content: "\f099"; }
+//  content: "\f099";
+  content: '𝕏';
+  font-family: unset;
+  font-weight: bold;
+}
 
 .fa-twitter-square:before {
-  content: "\f081"; }
+  content: "\f081";
+  content: '𝕏';
+  font-family: unset;
+  font-weight: bold;
+}
 
 .fa-typo3:before {
   content: "\f42b"; }
